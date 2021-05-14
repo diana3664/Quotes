@@ -1,4 +1,4 @@
 export class Quote {
-  constructor(public id: number,public quote: string){
+  constructor(public id: number,public theQuote: string){
   }
 }

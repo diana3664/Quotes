@@ -1,9 +1,11 @@
-<app-quote></app-quote>
 <div>
   <h1>Quotes</h1>
   <hr>
   <ul>
-    <li *ngFor='let quote of quotes'>{{quote.quote}}</li>
-
+    <div *ngFor='let quote of quotes; let i = index'>{{quote.theQuote}}
+    <div>
+      <app-quote-delete [quote]='quote' (isComplete) = 'completeQuote($event, i)'></app-quote-delete>
+    </div>
+  </div>
   </ul>
 </div>
