@@ -41,9 +41,9 @@ upVote(upvote,index){
 }
 
 
-downVote(upvote,index){
-  if(upvote){
-    this.quotes[index].upvote +=1;
+downVote(downvote,index){
+  if(downvote){
+    this.quotes[index].downVote +=1;
   }
 }
 

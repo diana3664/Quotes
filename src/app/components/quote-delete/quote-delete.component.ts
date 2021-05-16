@@ -25,7 +25,7 @@ export class QuoteDeleteComponent implements OnInit {
   }
 
   downVote(countVote:boolean){
-    this.upvote.emit(countVote)
+    this.downvote.emit(countVote)
  }
 
   constructor() { }

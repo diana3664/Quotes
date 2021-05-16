@@ -5,12 +5,13 @@
     <div class="row">
       <div class="col">
         <div *ngFor='let quote of quotes; let i = index'>{{quote.theQuote}}
-          Posted By{{quote.name}}
           <br>
-          Author {{quote.author}}
+          Posted By:{{quote.name}}
+          <br>
+          Author : {{quote.author}}
           <div>
             <app-quote-delete [quote]='quote' (isComplete)='completeQuote($event, i)' (upvote)='upVote($event,i)'
-              (downvote)='upVote($event,i)'></app-quote-delete>
+              (downvote)='downVote($event,i)'></app-quote-delete>
           </div>
         </div>
       </div>
