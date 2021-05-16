@@ -10,8 +10,17 @@ h1{
 }
 #style1{
   padding-left: 700px;
+  font-size:20px;
+}
+#style2{
+  font-size:30px;
+  color: green !important;
 }
 #style3{
-  padding-left: 360px;
-  margin-top: 30px;
+  padding-left: 550px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+#style4{
+  padding-top: 400px;
 }
